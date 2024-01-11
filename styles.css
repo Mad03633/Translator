@@ -59,7 +59,7 @@ body{
 
 .container .select-box .to-input-box i,
 .container .select-box .from-input-box i{
-    padding-left: 12px;
+    padding-left: 2px;
     font-size: 22px;
 }
 
@@ -77,6 +77,10 @@ body{
     margin-top: 27px;
     color: white;
     cursor: pointer;
+}
+
+.container .select-box .switch-btn i{
+    font-size: 18px;
 }
 
 .container .from-input-box,

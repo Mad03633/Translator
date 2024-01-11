@@ -104,6 +104,7 @@ let toInput = document.querySelector('.container .select-box .to-input-box input
 let switchBtn = document.querySelector('.container .select-box .switch-btn');
 let fromOptionsBox = document.querySelector('.container .from-options');
 let toOptionsBox = document.querySelector('.container .to-options');
+let fromInputBox = document.querySelector('.container .select-box .from-input-box')
 let toInputBox = document.querySelector('.container .select-box .to-input-box');
 let FromTranslateInput = container.querySelector('.from-text-box textarea');
 let ToTranslateInput = container.querySelector('.to-text-box textarea');
@@ -174,6 +175,12 @@ FromTranslateInput.addEventListener('keyup', (e) => {
         }
     }
 })
+
+let copyFromText = () => {
+    if(FromTranslateInput.value != ''){
+        navigator.clipboard.writeText(FromTranslateInput.value);
+    }
+}
 
 let copyToText = () => {
     if(ToTranslateInput.value != ''){
